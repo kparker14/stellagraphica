@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVG Path Animator Demo</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body { background-color:#fafafa;}
+.container { margin:150px auto; max-width:600px;}
+#example {
+  display: block;
+  margin: .5em auto;
+}
+
+#example path {
+  fill: none;
+  stroke: #1ABC9C;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
+<script src="svg_path_animator.min.js"></script>
+<script type='text/javascript'>//<![CDATA[
+window.onload=function(){
+var myAnimation = new AniPath('#example');
+myAnimation.init(3000, 100, 300);
+myAnimation.animate();
+}//]]> 
+
+</script>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/jQuery-Velocity-SVG-Path-Animator/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>SVG Path Animator Demo</h1>
+<svg id="example" viewBox="0 0 96 96" class="svg-icon icon-cloud">
+<path id="icon-cloud_border" fill="#4D5152" d="M47.9 82.3l-0.2-7.5c0-0.1-0.5-4.6 2.3-7.7 1.7-1.9 4.3-2.9 7.6-2.9h17.3c3.8 0 14.1-3.5 14.1-14.7 0-12.9-12.2-13.7-12.7-13.7 -0.5 0-1-0.5-1-1 0-0.1 0.2-5.6-3.3-8.9 -2.1-2-5.2-2.9-9.2-2.5 -0.4 0-0.8-0.2-1-0.6 -0.2-0.4-5.2-10.8-18-10.3 -18 0.7-20.5 17.1-20.8 20.4 0 0.5-0.4 0.9-0.9 0.9C21.5 33.9 7 35.3 7 50c0 8.6 8.1 13.5 12.4 14.2 2.6 0.4 16 0.4 19.4 0.2 2.7-0.2 4.8-1.1 6.2-2.9 3.4-4 2.7-10.9 2.6-11l-0.1-1 2-0.2 0.1 1c0 0.3 0.8 7.8-3.1 12.5 -1.9 2.2-4.4 3.4-7.7 3.6 -3.6 0.2-17.1 0.2-19.9-0.2C13.2 65.1 5 59 5 50c0-14.4 12.7-17.5 16.1-18 1.2-9.7 7.8-20.8 22.6-21.5C56.2 10 62 18.8 63.3 21.3c4.3-0.2 7.7 0.8 10.1 3.2 3.2 3.1 3.8 7.5 3.9 9.5C82.5 34.6 91 38.4 91 49.6c0 12.7-11.8 16.7-16.1 16.7H57.6c-2.7 0-4.7 0.8-6.1 2.2 -2.2 2.5-1.8 6.2-1.8 6.2l0.2 7.6L47.9 82.3z" />
+<g>
+  <circle id="ball2" class="ball" r="3.5" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball3" class="ball" r="3" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball4" class="ball" r="2.5" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball5" class="ball" r="2.2" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball6" class="ball" r="2" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball7" class="ball" r="1.8" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball8" class="ball" r="1.4" cy="87.290741" cx="48.762711" fill="#FF550E" />
+  <circle id="ball9" class="ball" r="1" cy="87.290741" cx="48.762711" fill="#FF550E" />
+</g>
+<g>
+  <polygon id="icon-cloud_arrow_top" class="arrow" fill="#FF550E" points="41.7 54.2 48.7 47.6 55.7 54.2 54.2 55.6 48.7 50.3 43.2 55.6 " />
+  <polygon id="icon-cloud_arrow_bottom" class="arrow" fill="#FF550E" points="55.7 76.8 48.7 83.4 41.7 76.8 43.2 75.4 48.7 80.7 54.2 75.4 " />
+</g>
+<g>
+  <path id="icon-cloud_reflection" fill="#12C4E8" d="m 30.178658,31.155089 c -0.383147,0 -0.766295,-0.306518 -0.766295,-0.766295 0,-0.07663 0,-10.651504 11.417799,-11.494429 0.459777,0 0.766295,0.306518 0.842925,0.689666 0,0.459777 -0.306518,0.766295 -0.689666,0.842925 -9.961838,0.766295 -10.038467,9.57869 -10.038467,9.961838 0,0.383147 -0.306518,0.689665 -0.766296,0.766295 0,0 0,0 0,0 z" />
+</g>
+</svg>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
