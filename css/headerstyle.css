@@ -66,6 +66,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: poppins, sans-serif !important;
     /* overflow-x: hidden; */
     /* overflow: auto; */
 
@@ -91,6 +92,9 @@ body {
     justify-content: center;
     
     border-bottom: red 4px solid;
+    --mask: radial-gradient(7px at 75% 100%, #0000 98%, #000) 50% calc(100% - 7px)/28px 100% repeat-x, radial-gradient(7px at 25% 50%, #000 99%, #0000 101%) bottom/28px 14px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
     /* display: grid;
     align-items: center;
     width: 150px;
@@ -820,14 +824,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 
 }
 
-#about-section {
-
-/* 
-    height: 200px;
-    width: 100%;
-    background-color: white; */
-}
-
 @media only screen and (min-width: 768px) {
 #menu-header {
 
@@ -838,6 +834,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
     bottom: 0;
     right: 0; */
     background-color: rgba(25, 45, 59, 0.5);
+    background-color:#242C54;
     z-index:800;
     margin: 0 auto;
     display: flex;
@@ -981,6 +978,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
     margin-left: calc(((100% - 340px) / 2) + 11px);*/
     /* z-index: 2; */
     font-family: 'Raleway', sans-serif;
+   /*  font-family: 'Glass Antiqua', cursive; */
     font-weight: bold;
     color: #f9e79b;
     line-height: 1.5;
@@ -995,13 +993,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
     /* z-index: 6; */
     /* max-width: 100%; */
     /* margin: auto; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
-    /* color: white; */
+    /* text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 2px 2px 1px rgba(206,89,55,0.03);
+    color: white; */
     /*text-align: center;
     animation: blink 12s infinite;
     -webkit-animation: blink 12s infinite;*/
-    -webkit-text-stroke: 2px yellow;
+   /*  -webkit-text-stroke: 2px yellow; */
     flex: 1 1 0%;
     /* line-height: 40px; */
     /* height: 41px; */
@@ -1569,9 +1568,13 @@ li a:active {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to top, #1a548d 0%, #062d54 100%); 
+    background-image:url("../images/purple-gradient.jpg");
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
 
     border-bottom: red 4px solid;
+    --mask: radial-gradient(7px at 75% 100%, #0000 98%, #000) 50% calc(100% - 7px)/28px 100% repeat-x, radial-gradient(7px at 25% 50%, #000 99%, #0000 101%) bottom/28px 14px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
    /*  --mask: radial-gradient(4px at 25% 0, #0000 98%, #000) 50% 4px/16px 51% repeat-x, 
     radial-gradient(4px at 75% 50%, #000 99%, #0000 101%) top/16px 8px repeat-x; */
     /* radial-gradient(4px at 75% 100%, #0000 98%, #000) 50% calc(100% - 4px)/16px 51% repeat-x, 
@@ -1765,12 +1768,17 @@ background: linear-gradient(to right,  #86d1ef 1%,#49c0f0 5%,#3884b7 53%,#2cafe3
     justify-content: center;
     margin: 0;
     /* background-image: linear-gradient(to top, #1a548d 0%, #062d54 100%); */
-    background-image: url("../images/sea-7423274_1920.jpg");
+    background-image: url("../images/purple-gradient.jpg");
+    /* filter: brightness(150%); */
     background-size: cover;
     /* position: absolute;
     top: 0;*/
+    /* filter: saturate(0.5); */
     overflow: hidden;
     border-bottom: red 4px solid;
+    --mask: radial-gradient(7px at 75% 100%, #0000 98%, #000) 50% calc(100% - 7px)/28px 100% repeat-x, radial-gradient(7px at 25% 50%, #000 99%, #0000 101%) bottom/28px 14px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
      
    /* background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(23, 233, 173),rgb(29, 24, 208)); */
 }
@@ -2376,6 +2384,7 @@ textarea {
     color: rgb(235, 85, 85);
     font-weight: bold;
     margin: 20px;
+   
     
 }
 
@@ -2395,16 +2404,19 @@ textarea {
 #about-section {
 
     width: 100%;
-    height: auto;
+    height: 100vh;
     /* overflow: hidden; */
    /*  background-color: whitesmoke;
     background-color: #190364; */
     background-image: linear-gradient(to top, #1a548d 0%, #062d54 100%);
     border-bottom: red 4px solid;
+    --mask: radial-gradient(7px at 75% 100%, #0000 98%, #000) 50% calc(100% - 7px)/28px 100% repeat-x, radial-gradient(7px at 25% 50%, #000 99%, #0000 101%) bottom/28px 14px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
   /*   display: flex;
     align-items: center;
   justify-content: center; */
-   background-image: url("../images/industry-2630319_1920.jpg");
+   background-image: url("../images/geometric.jpg"); 
 
   /*   filter: sepia(100%) hue-rotate(190deg) saturate(500%); 
     filter: sepia(88%) saturate(2116%) hue-rotate(157deg) brightness(89%) contrast(101%);
@@ -2413,9 +2425,10 @@ textarea {
 
    overflow: hidden;
    background-size: cover; 
-   padding-left: 50px;
+  /*  padding-left: 50px;
    padding-top: 20px;
-   padding-bottom: 50px;
+   padding-bottom: 50px; */
+   padding: 50px;
 }
 
 #about-section-overlay {
@@ -2425,7 +2438,26 @@ textarea {
     margin:50px;
     width:100%;
     height:100%; */
+    background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  line-height: 1.5;
+  padding: 40px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
 
+#about-section-overlay .paragraph-header {
+
+    font-size: 32px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 20px;
 }
 
 #about-section-overlay div p {
@@ -2444,26 +2476,51 @@ textarea {
     
 }
 
-#about-section img {
+#angular {
+    background-color: black;
+    background: url("../images/angular-icon.svg");
+    left: 200px;
+}
 
-    border-radius: 50%;
-    border: goldenrod 3px solid;
+#Bootstrap {
+    background-color: black;
+    background-image: url("../images/bootstrap-5-1.svg");
+    left: 50px;
+}
+
+#visual-studio-code {
+
+    background-color: black;
+    background-image: url("../images/visual-studio-code-1.svg");
+    left: 370px;
+}
+
+.logos {
+   
+    /* border-radius: 50%; */
+     border: goldenrod 3px solid; 
     margin: auto;
     /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-top:50px;
     margin-bottom: 50px;
-    
+    position: absolute;
+    bottom: -20px;
     width: 150px;
     height: 150px;
+    background-size: cover; 
+    padding: 20px; 
+    object-fit: cover;
+    position: absolute;
+    z-index: 999;
     /* position: relative;
     top: 0px; */
     /* left: 300px; */
     /* margin: 50px; */
     /* box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14); */
     /* width: 50%; */
-    box-shadow: 0 30px 40px rgba(0,0,0,0.60), 0 30px 13px rgba(0,0,0,0.14);
+   /*  box-shadow: 0 30px 40px rgba(0,0,0,0.60), 0 30px 13px rgba(0,0,0,0.14); */
     /* filter: saturate(1.5) contrast(1.5) hue-rotate(-15deg); */
     /* filter: invert(80%); */
 }
@@ -3795,3 +3852,86 @@ mat-form-field {
     background-color: purple; */
 }
 
+/* About section CSS code */
+
+/* The magic here that makes animations wait */ 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+.animated-header {
+  background: #000;
+  overflow: hidden;
+   position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+.animated-header:before {
+  animation: show-background 60s .5s cubic-bezier(0,1,.5,1) forwards;
+  background: url(../images/network.jpg) no-repeat center;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  position:relative;
+   height: 100vh;
+ position: absolute;
+  width: 100vw; 
+}
+
+.logo2, .loading {
+ /*  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  animation: show-logo 2s 1.5s cubic-bezier(0,1.79,.28,.73) forwards;
+}
+
+.loading {
+  color: #aaa;
+  font-size: 48px;
+  display: none;
+}
+
+.js-loading .loading {
+  display: block;
+}
+
+/* .logo2 svg {
+  animation: show-logo 2s 1.5s cubic-bezier(0,1.79,.28,.73) forwards;
+  opacity: 0;
+} */
+
+@keyframes show-background {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+    
+  }
+}
+
+ /* @keyframes show-logo {
+  0% {
+    opacity: 0;
+    transform: scale(.8);
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  
+  } 
+} */
