@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Katherine Parker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home</title>
+    <script src="js/jquery-3.6.3.js"></script>
+   
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Poppins&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@900&display=swap"
+        rel="stylesheet">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Niconne:400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa&family=Sofia+Sans+Semi+Condensed:wght@900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        /* $("document").ready(function(){
+           $("#arrow").bind("click", function(event){$('#gallery-section').animate({scrollTop: $(aid).offset().top},'slow');});
+       });  */
+
+        /* $("#arrow").click(function(e) {
+        e.preventDefault();
+        var aid = $(this).attr("href");
+        alert(aid); */
+        //$('#gallery-section').animate({scrollTop: $(aid).offset().top},'slow');
+
+        /* }); */
+
+        document.body.className += " js-loading";
+
+        window.addEventListener("load", showPage, false);
+
+        function showPage() {
+            document.body.className = document.body.className.replace("js-loading", "");
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="menu-header">
+            <div class="img">
+                <a href="index.html">
+                    <img id="bee-logo" src="images/LOGO3.png" [src]="'src/images/KPDesignsLogoBlueSM.png'"
+                        alt="logo">
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li>
+                        <a href="#top" class="fancy-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-section" class="fancy-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#form-section" class="fancy-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#gallery-section" class="fancy-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="blog/blog.html" class="fancy-link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            - <nav class="navbar" style="visibility: hidden;">
+                <div class="navbar-container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="#menu-header">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#gallery-section">Gallery</a></li>
+                        <li><a href="#form-section">Contact</a></li>
+                        <li><a href="blog/blog.html">Blog</a></li>
+                    </ul>
+
+                </div>
+                <img id="bee-logo2" class="small-logo" src="images/KPDesignsLogoBlueSM.png" alt="logo">
+            </nav>
+        </div>
+
+</body>
