@@ -165,10 +165,10 @@ body {
   /* see rest of code for video-wrapper after media queries */
   #video-wrapper {
     top: -160px;  
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    margin: auto;
-    padding: auto;
+/*     margin: auto;
+    padding: auto; */
   }
   
   #video-wrapper > .bubble-video-background {
@@ -405,7 +405,7 @@ body {
 }
 
 
-@media (min-aspect-ratio: 16/9) {
+/* @media (min-aspect-ratio: 16/9) {
   video {
     width: 100%;
     height: auto;
@@ -416,7 +416,7 @@ body {
     width: auto;
     height: 100%;
   }
-}
+} */
 
 /* @media only screen and (min-width: 769px) {
   #toggle-container {
