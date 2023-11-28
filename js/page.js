@@ -393,7 +393,57 @@
 
 
 // Get the modal
+$(document).ready(function () {
+
+   
 var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+console.log("count is: " + $('img[id^="image-"]').length); 
+
+$('img[id^="image-"]').each(
+    
+    function () 
+    {
+    $(this).click (function () {
+   // console.log("src is: " + this);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+   // console.log("modal is: " + modal);
+    //console.log("img is: " + img);
+    //console.log("modalImg is: " + modalImg)
+        });
+});
+
+//var img = document.getElementById("image-7");
+/* var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption"); */
+
+
+
+/* img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+
+    console.log("modalImg.src is: " + modalImg.src);
+    captionText.innerHTML = this.alt;
+  } */
+  
+  var span = document.getElementsByClassName("close")[0];
+  
+  console.log("span is: " + span);
+
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+});
+
+
+
+
 var previousArrow = null;
 var currentDivLeft;
 var currentDivRight;
@@ -402,6 +452,7 @@ var currentDivRight;
 
 $(document).ready(function () {
 
+   
     let firstImageDiv = null;
 
     class Carousel {

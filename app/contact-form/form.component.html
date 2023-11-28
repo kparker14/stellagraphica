@@ -1,12 +1,12 @@
 <!-- <div class="bg" > -->
 
-  <main id="main2" class="form-contact" [hidden]="success">
-    <div class="container">
+  <main id="main2" class="form-contact row" [hidden]="success">
+    <div class="container col d-flex flex-column justify-content-between">
       <div >
         <!-- [hidden]="submitted" -->
         <h1 class="h3">Contact</h1>
         <!-- (ngSubmit)="onSubmit()" -->
-        <form #contactForm id="contactForm" class="" [formGroup]="myForm"  class="row g-2 needs-validation" novalidate>
+        <form #contactForm id="contactForm" [formGroup]="myForm"  class="needs-validation" novalidate>
         
           <div class="form-floating" style="position: relative;">
            
@@ -37,7 +37,7 @@
 
           <div class="form-floating" style="position: relative;">
 
-            <input type="email" #emailTemplateVariable [formControl]="email" name="email"  class="form-control no-border" placeholder="Provide your email"
+            <input type="email" #emailTemplateVariable [formControl]="email" name="email"  class="form-control no-border email-control" placeholder="Provide your email"
               id="email">
             <label for="email">Email</label>
 
@@ -52,7 +52,7 @@
           <div class="form-floating" style="position: relative;">
 
             <!-- always keep your textarea code on the same line - really... and it's 2023 -->
-            <textarea id="comment" name="comment" [defaultValue]="myValue" (input)="onValueChange($event);" #commentTemplateVariable [formControl]="comment" class="form-control no-border" rows="6" maxlength="1000" placeholder="Provide a comment"></textarea>
+            <textarea id="comment" name="comment" [defaultValue]="myValue" (input)="onValueChange($event);" #commentTemplateVariable [formControl]="comment" class="form-control no-border textarea-control" rows="6" maxlength="1000" placeholder="Provide a comment"></textarea>
             <label for="comment">Comment</label>
         
           <div class="text-danger" #inputNil *ngIf="(!comment.pristine && comment.value == '') || (comment.pristine && comment.value == '' && submitted == true)"  >
