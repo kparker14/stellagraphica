@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Home</title>
-   <!--  <script src="js/jquery-3.6.3.js" ></script> -->
+    <!--  <script src="js/jquery-3.6.3.js" ></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-   <!--  <script src="js/jquery-ui.js"></script> -->
+    <!--  <script src="js/jquery-ui.js"></script> -->
     <!-- <script src="js/javascript.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    
+
 </head>
 
 <body>
@@ -44,7 +44,7 @@
             <div id="top-menu">
                 <div class="logo-large">
                     <a href="index.html">
-                        <img id="bee-logo-large" src="images/LOGO3.png" alt="logo">
+                        <img id="img-logo-large" src="images/LOGO3.png" alt="logo">
                     </a>
                 </div>
                 <nav id="main-nav" class="nav nav-bar" role="navigation">
@@ -69,11 +69,11 @@
             </div>
             <div id="side-menu">
                 <nav class="navbar">
-                    <div class="logo-large">
+                   <!--   <div class="logo-small">
                         <a href="index.html">
-                            <img id="bee-logo-small" src="images/LOGO3_small.png" alt="logo">
+                            <img id="img-logo-small" src="images/LOGO3_small.png" alt="logo">
                         </a>
-                    </div>
+                    </div>  -->
                     <!--  <div class="header"></div> -->
                     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
                     <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -82,42 +82,27 @@
                         <div class="spinner diagonal part-2"></div>
                     </label>
 
-                  
                     <div id="sidebarMenu">
                         <ul class="sidebarMenuInner">
-                                <li class="nav__item"><a href="#menu-header">Home</a></li>
-                                <li class="nav__item"><a href="#about-section">About</a></li>
-                                <li class="nav__item"><a href="#gallery-section">Gallery</a></li>
-                                <li class="nav__item"><a href="#form-section">Contact</a></li>
-                                <li class="nav__item"><a href="blog/blog.html">Blog</a></li>
-                        
+                            <li class="nav__item"><a href="#menu-header">Home</a></li>
+                            <li class="nav__item"><a href="#about-section">About</a></li>
+                            <li class="nav__item"><a href="#gallery-section">Gallery</a></li>
+                            <li class="nav__item"><a href="#form-section">Contact</a></li>
+                            <li class="nav__item"><a href="blog/blog.html">Blog</a></li>
+
                         </ul>
-                    
                     </div>
-                 
                 </nav>
             </div>
-            <!--   <div class="navbar-container">
-
-                <ul class="menu-items" id="menu" tabindex="-1" aria-label="main navigation" hidden>
-                    <li class="nav__item"><a href="#menu-header">Home</a></li>
-                    <li class="nav__item"><a href="#about-section">About</a></li>
-                    <li class="nav__item"><a href="#gallery-section">Gallery</a></li>
-                    <li class="nav__item"><a href="#form-section">Contact</a></li>
-                    <li class="nav__item"><a href="blog/blog.html">Blog</a></li>
-                </ul>
-
-            </div> -->
-            <!-- <img id="bee-logo2" class="small-logo" src="images/KPDesignsLogoBlueSM.png" alt="logo"> -->
             </nav>
         </div>
         <div id="video-wrapper">
-             <video class="bubble-video-background" data-autoplay="1" loop="loop" muted="muted" preload="auto">
+            <video class="bubble-video-background" data-autoplay="1" loop="loop" muted="muted" preload="auto">
                 <source src="media/Bubble.mp4" type="video/mp4">
-            
+
                 Your browser does not support HTML5 video.
-            </video> 
-           <!--  <img id="video-image" src="images/background.jpg" alt="video background"> -->
+            </video>
+            <!--  <img id="video-image" src="images/background.jpg" alt="video background"> -->
             <div id="center-content-wrapper">
                 <svg id="mermaid" version="1.1" height="544.21124" width="573.05634" viewBox="0 0 71.632045 68.026405"
                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
@@ -339,47 +324,42 @@
 
     </header>
 
-    <!-- <section id="about-section">
+    <section id="about-section">
 
         <div id="about-section-overlay">
             <h3 class="paragraph-header">About</h3>
             <div>
                 <p> Over 15 years experience! Including Angular, CSS, SASS, JavaScript, TypeScript,
-                    C#, Python, SQL, .Net, graphics, 3D modeling and more! Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-                    est laborum.
+                    C#, Python, SQL, .Net, graphics, 3D modeling, Website integration and more!
                 </p>
             </div>
-            <div id="technology-wrapper">
-                <div id="angular-wrapper">
-                    <div id="angular" class="logos">
-                    </div>
+             <div id="technology-wrapper">
+               
+                    <span id="angular" class="logos">
+                    </span>
+                    <span id="bootstrap" class="logos">
+                    </span>
+                    <span id="visual-studio-code" class="logos">
+                    </span>
+                    <span id="typescript" class="logos">
+                    </span>
+                    <span id="photoshop" class="logos">
+                    </span>
+                    <span id="html5" class="logos">
+                    </span>
+                    <span id="illustrator" class="logos">
+                    </span>
+                    <span id="powerpoint" class="logos">
+                    </span>
+                    <span id="d3dsmax" class="logos">
+                    </span>
+              
+            </div> 
 
-                </div>
-                <div id="bootstrap" class="logos">
-                </div>
-                <div id="visual-studio-code" class="logos">
-                </div>
-                <div id="typescript" class="logos">
-                </div>
-                <div id="photoshop" class="logos">
-                </div>
-                <div id="html5" class="logos">
-                </div>
-                <div id="illustrator" class="logos">
-                </div>
-                <div id="powerpoint" class="logos">
-                </div>
-                <div id="d3dsmax" class="logos">
-                </div>
-            </div>
-          
     </section>
-    <section id="gallery-section">
+
+    
+     <section id="gallery-section">
         <div id="gallery-wrapper">
 
             <div id="carousel-container">
@@ -428,7 +408,7 @@
                         </div>
                         <div id="imagediv-7">
                             <img src="images/tiims.jpg" alt="TIIMS project" id="image-7">
-                            <label id="tiims" class="carousel-caption">Websites and software systems integration</label>
+                            <label id="tiims" class="carousel-caption" style="font: size 10px;">Websites and software systems integration</label>
                         </div>
                     </div>
                 </div>
@@ -438,7 +418,7 @@
             
     </section>
 
-    <section id="form-section">
+   <section id="form-section">
         <div id="form-wrapper">
             <div class="column">
                 <div class='row'>
@@ -448,7 +428,7 @@
         </div>
     </section>
 
-    <footer class="">
+   <!-- <footer class="">
 
         <div class="footer-inner-content-wrapper">
             <div>
@@ -484,13 +464,13 @@
                 </small>
             </p>
         </div>
-    </footer>
+    </footer>-->
     <script src="js/page.js"></script>
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
-    </div> -->
+    </div>  
 </body>
 
 </html>

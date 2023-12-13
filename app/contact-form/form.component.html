@@ -11,7 +11,7 @@
           <div class="form-floating" style="position: relative;">
            
             <input type="text" id="firstName" #firstNameTemplateVariable name="firstName" placeholder="Provide your first name"
-              class="form-control no-border" id="first-name" formControlName="firstName" [formControl]="firstName">
+              class="form-control no-border form-control-sm" id="first-name" formControlName="firstName" [formControl]="firstName">
             <label for="first-name">First Name</label>
  
             <div class="text-danger" #inputNil id="first-name-state-validator"  *ngIf="(!firstName.pristine && firstName.value == '') || (firstName.pristine && submitted == true)">
@@ -21,11 +21,11 @@
             <div class="text-danger" *ngIf="firstName?.errors?.['forbiddenName'] ">
               Name cannot be Bob
             </div>
-          </div>
+          </div> 
 
            <div class="form-floating" style="position: relative;">
 
-            <input type="text" name="lastName" formControlName="lastName" #lastNameTemplateVariable id="last-name" class="form-control no-border" placeholder="provide your last name"
+            <input type="text" name="lastName" formControlName="lastName" #lastNameTemplateVariable id="last-name" class="form-control no-border form-control-sm" placeholder="provide your last name"
               [formControl]="lastName">
             <label for="last-name">Last Name</label>
 
@@ -37,7 +37,7 @@
 
           <div class="form-floating" style="position: relative;">
 
-            <input type="email" #emailTemplateVariable [formControl]="email" name="email"  class="form-control no-border email-control" placeholder="Provide your email"
+            <input type="email" #emailTemplateVariable [formControl]="email" name="email"  class="form-control no-border email-control form-control-sm" placeholder="Provide your email"
               id="email">
             <label for="email">Email</label>
 
@@ -52,7 +52,7 @@
           <div class="form-floating" style="position: relative;">
 
             <!-- always keep your textarea code on the same line - really... and it's 2023 -->
-            <textarea id="comment" name="comment" [defaultValue]="myValue" (input)="onValueChange($event);" #commentTemplateVariable [formControl]="comment" class="form-control no-border textarea-control" rows="6" maxlength="1000" placeholder="Provide a comment"></textarea>
+            <textarea id="comment" name="comment" [defaultValue]="myValue" (input)="onValueChange($event);" #commentTemplateVariable [formControl]="comment" class="form-control no-border textarea-control form-control-sm" rows="6" maxlength="1000" placeholder="Provide a comment"></textarea>
             <label for="comment">Comment</label>
         
           <div class="text-danger" #inputNil *ngIf="(!comment.pristine && comment.value == '') || (comment.pristine && comment.value == '' && submitted == true)"  >
